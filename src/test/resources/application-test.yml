@@ -8,7 +8,7 @@ spring:
   jpa:                                                # db initialization
     hibernate:
       ddl-auto: create-drop
-      generate-ddl: false                             # create true
+      generate-ddl: false
       show-sql: true                                  # sql log
     properties:
       hibernate:
@@ -22,6 +22,3 @@ logging:
             descriptor: trace                         # sql value log
         springframework:
           security: DeBug                             # spring security
-
-external-api:
-  push: ''
