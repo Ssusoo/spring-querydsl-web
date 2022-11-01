@@ -8,8 +8,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
 
-class SpringQuerydslWebApplicationTests extends BaseTest{
-
+class SpringQuerydslWebApplicationTests extends BaseTest {
 
 	@Test
 	@DisplayName("회원가입 뷰")

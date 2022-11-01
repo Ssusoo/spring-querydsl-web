@@ -11,7 +11,6 @@ import org.springframework.test.web.servlet.MockMvc;
 @AutoConfigureMockMvc
 @SpringBootTest
 public class BaseTest {
-
 	@Autowired
 	protected MockMvc mockMvc;
 
