@@ -9,7 +9,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 class SpringQuerydslWebApplicationTests extends BaseTest {
-
 	@Test
 	@DisplayName("회원가입 뷰")
 	void signUpForm() throws Exception {
