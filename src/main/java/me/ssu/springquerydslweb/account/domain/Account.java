@@ -2,10 +2,7 @@ package me.ssu.springquerydslweb.account.domain;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
@@ -16,8 +13,18 @@ public class Account {
 	@Id @GeneratedValue
 	private Long id;
 
-	@Column(unique = false)
+	@Column(unique = true)
 	private String email;
 
-	@Column(unique = false)
+	@Column(unique = true)
+	private String nickname;
+
+	@Lob @Basic
+	private String profileImage;
+
+	private String password;
+
+	private boolean emailVerified;  // 이메일 인증 확인
+
+	private String emailCheckToken;
 }
